@@ -26,7 +26,7 @@ SECRET_KEY = 'b)ci)c)hux(zgryyon4r0g%h#jnr0&unlit7&u7y&zbsu@hjv5'
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1', 'django.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'purrerbot.pythonanywhere.com']
 
 
 # Application definition
