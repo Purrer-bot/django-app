@@ -21,6 +21,7 @@ button {
   border:none;
   height:32px;
   font-family: 'Oswald', sans-serif;
+  width: 50px;
 
 }
 p {
@@ -40,6 +41,27 @@ header {
 }
 form[name='search'] {
   float:right;
+}
+.add {
+  position:fixed;
+  left: 10px;
+  background:#029bb9;
+  padding:10px;
+  font: 24px 'Oswald', sans-serif;
+}
+.add a {
+  color:#fff;
+}
+.edit {
+  position:fixed;
+  left: 10px;
+  top: 130px;
+  background:#029bb9;
+  padding:10px;
+  font: 24px 'Oswald', sans-serif;
+}
+.edit a {
+  color:#fff;
 }
 nav a {
   text-decoration: none;
