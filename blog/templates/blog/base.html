@@ -1,0 +1,89 @@
+<!doctype html>
+{%load static%}
+<html lang='ru'>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	  <title>Corporate_blue_on_django</title>
+	  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+
+  	<!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  </head>
+  <body>
+    <div id='wrapper'>
+      <header>
+        <a href=''><img src='images/logo.png' alt="Corporate Blue"></a>
+        <form name='search' action='#' method='get'>
+          <input type='text' name='q' placeholder="Search">
+          <button type='submit'>GO</button>
+        </form>
+      </header>
+      <nav>
+        <ul class='top-menu'>
+          <li><a href=''>Main</a></li>
+          <li class="active">Posts</li>
+          <li><a href='/services/'>Services</a></li>
+          <li><a href='/partners/'>Partners</a></li>
+          <li><a href='/projects/'>Projects</a></li>
+          <li><a href='/careers/'>Careers</a></li>
+          <li><a href='/contact/'>Contacts</a></li>
+        </ul>
+      </nav>
+      <div id='heading'>
+        <h1>Posts</h1>
+      </div>
+      <aside>
+        <nav>
+          <ul class='aside-menu'>
+            <li class='active'>Posts</li>
+            <li><a href=''>Services</a></li>
+            <li><a href=''>Partners</a></li>
+            <li><a href=''>Projects</a></li>
+            <li><a href=''>Careers</a></li>
+            <li><a href=''>Contacts</a></li>
+          </ul>
+        </nav>
+        <h2>Реклама</h2>
+        <p><img src='' width='230' height='230' alt='Our_offices'></p>
+      </aside>
+      <section>
+         {% block content %}
+         {% endblock %}
+
+      </section>
+    </div>
+    <footer>
+      <div id='footer'>
+        <div id='twitter'>
+          <h3>Twitter</h3>
+          <time datetime="2017-09-19"><a href='#'>19 sep</a></time>
+          <p>Footer</p>
+        </div>
+        <div id='sitemap'>
+          <h3>Sitemap</h3>
+          <div>
+            <a href='index.html'>Main</a>
+            <a href='index.html'>Main </a>
+            <a href='index.html'>Main</a>
+          </div>
+        </div>
+        <div id="social">
+      	<h3>SOCIAL NETWORKS</h3>
+        	<a href="http://twitter.com/">Twitter</a>
+        	<a href="http://facebook.com/" >Facebook</a>
+        	<a href="http://plus.google.com/" >Google</a>
+        	<a href="http://vimeo.com/" >Vimeo</a>
+        	<a href="http://youtube.com/" >YouTube</a>
+        	<a href="http://flickr.com/" >Flickr</a>
+        	<a href="http://instagram.com/" >Instagram</a>
+        </div>
+        <div id='footer-logo'>
+            <p>Copyright © 2012 Whitesquare. A Purrer-bot creation</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
